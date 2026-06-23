@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NeuroVoice</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+
+  <h1>NeuroVoice</h1>
+
+  <input id="textInput" placeholder="Enter text..." style="padding:10px; width:300px;" />
+  <br><br>
+
+  <button onclick="generateVoice()">Generate Voice</button>
+
+  <p id="status"></p>
+
+  <script>
+    async function generateVoice() {
+      const text = document.getElementById("textInput").value;
+      const status = document.getElementById("status");
+
+      if (!text) {
+        alert("Enter text");
+        return;
+      }
+
+      status.innerText = "Generating voice...";
+
+      try {
+        const response = await fetch(
+          `http://127.0.0.1:8000/generate?text=${encodeURIComponent(text)}`
+        );
+
+        const blob = await response.blob();
+        const audioUrl = URL.createObjectURL(blob);
+
+        const audio = new Audio(audioUrl);
+        audio.play();
+
+        status.innerText = "Done ✅";
+      } catch (error) {
+        status.innerText = "Error ❌";
+        console.error(error);
+      }
+    }
+  </script>
+
+</body>
+</html>
