@@ -1,73 +1,306 @@
-# Welcome to your Lovable project
+<div align="center">
 
-## Project info
+# 🧠 NeuroVoice AI
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+### Intelligent Voice Cloning • Text-to-Speech • Speech-to-Text
 
-## How can I edit this code?
+Create realistic AI-generated voices, clone any voice from a short sample, and convert speech to text using state-of-the-art Transformer models.
 
-There are several ways of editing your application.
+<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript"/>
+<img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi"/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch"/>
+<img src="https://img.shields.io/badge/OpenAI-Whisper-black?style=for-the-badge&logo=openai"/>
+<img src="https://img.shields.io/badge/Qwen3--TTS-AI-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/CUDA-GPU-green?style=for-the-badge&logo=nvidia"/>
+<img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge"/>
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+*A modern AI-powered speech platform that combines Voice Cloning, Neural Text-to-Speech and Speech Recognition into one application.*
 
-Changes made via Lovable will be committed automatically to this repo.
+</div>
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# 📖 Overview
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+NeuroVoice AI is a modern web-based speech generation platform powered by Transformer-based Deep Learning models.
 
-Follow these steps:
+The application enables users to clone voices from short audio samples, generate highly natural speech, and convert spoken audio into text using advanced Artificial Intelligence.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Unlike traditional Text-to-Speech systems, NeuroVoice preserves speaker characteristics such as tone, accent and speaking style, producing realistic human-like audio.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+# ✨ Features
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+| Feature | Description |
+|---------|-------------|
+| 🎙 Voice Cloning | Clone voices from 5–30 second audio samples |
+| 🗣 Text-to-Speech | Generate realistic speech from text |
+| 🎤 Speech-to-Text | Browser STT + Offline Whisper |
+| 🌍 Multi-language | Supports multiple languages |
+| ❤️ Voice Library | Save, rename and manage voices |
+| ⚡ GPU Acceleration | CUDA support with CPU fallback |
+| 🎵 Playback Speed | 0.5x – 2x playback |
+| 📥 Audio Download | Export generated speech |
+| 🔄 Real-time Processing | Fast inference pipeline |
+| 🎨 Modern UI | Glassmorphism Dark Theme |
+
+---
+
+
+# 🏗 System Architecture
+
+```
+                User
+                  │
+                  ▼
+        React + TypeScript UI
+                  │
+            REST API Requests
+                  │
+                  ▼
+            FastAPI Backend
+        ┌─────────┴─────────┐
+        │                   │
+        ▼                   ▼
+ Qwen3-TTS Model     Whisper Model
+        │                   │
+ Voice Generation     Speech Recognition
+        │                   │
+        └─────────┬─────────┘
+                  ▼
+            Audio Processing
+                  │
+                  ▼
+          Final Audio Output
+```
+
+---
+
+# ⚙ AI Workflow
+
+```
+User Input
+     │
+     ▼
+Text Preprocessing
+     │
+     ▼
+Voice Profile Loading
+     │
+     ▼
+Qwen3-TTS
+     │
+     ▼
+Speech Generation
+     │
+     ▼
+Librosa Audio Processing
+     │
+     ▼
+Generated Audio
+```
+
+---
+
+# 🤖 AI Models
+
+## Qwen3-TTS
+
+- Neural Text-to-Speech
+- Voice Cloning
+- Speaker Adaptation
+- Transformer Architecture
+
+---
+
+## OpenAI Whisper
+
+- Speech Recognition
+- Audio Transcription
+- Offline STT
+- Transformer Architecture
+
+---
+
+# 🌍 Supported Languages
+
+- 🇺🇸 English
+- 🇮🇳 Hindi
+- 🇮🇳 Telugu
+- 🇯🇵 Japanese
+- 🇨🇳 Chinese
+- 🇰🇷 Korean
+- 🇪🇸 Spanish
+- 🇫🇷 French
+- 🇩🇪 German
+- 🇭🇰 Cantonese
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- Lucide React
+
+## Backend
+
+- FastAPI
+- Python
+
+## AI Models
+
+- Qwen3-TTS-12Hz-0.6B-Base
+- OpenAI Whisper
+
+## Deep Learning
+
+- PyTorch
+- CUDA
+
+## Audio Processing
+
+- Librosa
+- PyAV
+
+---
+
+# 📂 Project Structure
+
+```
+NeuroVoice
+│
+├── frontend
+│
+├── backend
+│
+├── models
+│
+├── voices_library
+│
+├── uploads
+│
+├── outputs
+│
+├── assets
+│
+└── README.md
+```
+
+---
+
+# ⚡ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/mohammedasad2518/Neuro-Voice.git
+```
+
+```
+cd Neuro-Voice
+```
+
+---
+
+## Install Frontend
+
+```bash
+cd frontend
+npm install
+```
+
+---
+
+## Install Backend
+
+```bash
+cd backend
+pip install -r requirements.txt
+```
+
+---
+
+## Run Backend
+
+```bash
+uvicorn main:app --reload
+```
+
+---
+
+## Run Frontend
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# 📊 Technologies Used
 
-**Use GitHub Codespaces**
+| Category | Technology |
+|----------|------------|
+| Programming | Python |
+| Frontend | React, TypeScript |
+| Backend | FastAPI |
+| AI | Qwen3-TTS |
+| STT | Whisper |
+| Deep Learning | PyTorch |
+| GPU | CUDA |
+| Audio | Librosa, PyAV |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+# 🎯 Applications
 
-This project is built with:
+- AI Voice Assistants
+- Accessibility Tools
+- Podcast Generation
+- YouTube Voiceovers
+- Audiobook Creation
+- Customer Support
+- Content Creation
+- Language Learning
+- Education
+- Smart Assistants
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+# 🔮 Future Enhancements
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+- Voice Emotion Control
+- Speaker Separation
+- Real-time Voice Conversion
+- More Languages
+- Mobile Application
+- Cloud Deployment
+- Fine-tuned Custom Models
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# 📜 License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is intended for educational and research purposes.
+
+---
+
+<div align="center">
+
+## ⭐ If you like this project, consider giving it a Star!
+
+
+</div>
