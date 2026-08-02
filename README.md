@@ -20,7 +20,9 @@ Create realistic AI-generated voices, clone any voice from a short sample, and c
 
 <br><br>
 
-<img src="assets/hero-banner.png" alt="NeuroVoice Banner" width="100%">
+<p align="center">
+  <img src="./hero_banner.png" alt="NeuroVoice Banner" width="100%">
+</p>
 
 ---
 
