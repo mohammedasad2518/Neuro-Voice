@@ -18,6 +18,10 @@ Create realistic AI-generated voices, clone any voice from a short sample, and c
 <img src="https://img.shields.io/badge/CUDA-GPU-green?style=for-the-badge&logo=nvidia"/>
 <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge"/>
 
+<br><br>
+
+<img src="assets/hero-banner.png" alt="NeuroVoice Banner" width="100%">
+
 ---
 
 *A modern AI-powered speech platform that combines Voice Cloning, Neural Text-to-Speech and Speech Recognition into one application.*
@@ -53,10 +57,9 @@ Unlike traditional Text-to-Speech systems, NeuroVoice preserves speaker characte
 
 ---
 
-
 # 🏗 System Architecture
 
-```
+```text
                 User
                   │
                   ▼
@@ -85,7 +88,7 @@ Unlike traditional Text-to-Speech systems, NeuroVoice preserves speaker characte
 
 # ⚙ AI Workflow
 
-```
+```text
 User Input
      │
      ▼
@@ -178,7 +181,7 @@ Generated Audio
 
 # 📂 Project Structure
 
-```
+```text
 NeuroVoice
 │
 ├── frontend
@@ -194,6 +197,7 @@ NeuroVoice
 ├── outputs
 │
 ├── assets
+│   └── hero-banner.png
 │
 └── README.md
 ```
@@ -208,7 +212,7 @@ NeuroVoice
 git clone https://github.com/mohammedasad2518/Neuro-Voice.git
 ```
 
-```
+```bash
 cd Neuro-Voice
 ```
 
@@ -287,20 +291,3 @@ npm run dev
 - Mobile Application
 - Cloud Deployment
 - Fine-tuned Custom Models
-
----
-
----
-
-# 📜 License
-
-This project is intended for educational and research purposes.
-
----
-
-<div align="center">
-
-## ⭐ If you like this project, consider giving it a Star!
-
-
-</div>
